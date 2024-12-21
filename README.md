@@ -10,6 +10,18 @@ Access the live application here: [M_Blogger_Family](https://m-blogger-family.ve
 
 ---
 
+## 🔄 Demonstration
+
+### 🎥 Video Walkthrough
+
+Watch the project walkthrough here: [Project Demo](https://youtu.be/f3P5WdyArig)
+
+### 🔗 GitHub Repository
+
+Explore the source code: [GitHub Repository](https://github.com/engrmarufw/m_blogger_family)
+
+---
+
 ## 🔐 Admin Login Credentials
 
 Use the following credentials to test the admin features:
@@ -96,9 +108,11 @@ Ensure you have the following installed:
    Create a `.env` file in the root directory and add the following:
 
    ```env
+   NODE_ENV= development
    PORT=5000
-   MONGO_URI=<your_mongodb_connection_string>
+   DATABASE_URL=<your_mongodb_connection_string>
    JWT_SECRET=<your_jwt_secret>
+   BRYPT_SALT_ROUNDS=12
    ```
 
 5. 🌐 Start the Server:
@@ -131,18 +145,6 @@ Ensure you have the following installed:
 - **Block User**: `PATCH /api/admin/users/:userId/block`
 - **Unblock User**: `PATCH /api/admin/users/:userId/unblock`
 - **Delete Blog**: `DELETE /api/admin/blogs/:id`
-
----
-
-## 🔄 Demonstration
-
-### 🎥 Video Walkthrough
-
-Watch the project walkthrough here: [Project Demo](https://youtu.be/f3P5WdyArig)
-
-### 🔗 GitHub Repository
-
-Explore the source code: [GitHub Repository](https://github.com/engrmarufw/m_blogger_family)
 
 ---
 
