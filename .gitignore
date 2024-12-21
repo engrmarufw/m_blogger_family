@@ -1,0 +1,36 @@
+# Node.js modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Build output
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Dependency directories
+jspm_packages/
+
+# Vercel deployment files
+.vercel
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore others
+*.bak
+*.tmp
