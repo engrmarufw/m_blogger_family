@@ -118,7 +118,7 @@ Ensure you have the following installed:
 5. 🌐 Start the Server:
 
    ```bash
-   npm run start
+   npm run start:dev
    ```
 
 6. 🎮 Access the Application:
