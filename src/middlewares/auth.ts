@@ -7,14 +7,17 @@ import config from '../config';
 // Middleware for authentication and authorization
 const auth = (...requiredRoles: string[]) => {
   return catchAsync(async (req: Request, res: Response, next: NextFunction) => {
-    const token = req.headers.authorization;
-    // Check if the token is provided
-    if (!token) {
+    const authHeader = req.headers.authorization;
+
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
       return res.status(401).json({
         success: false,
-        message: 'Authorization token is missing.',
+        message: 'Authorization token is missing or malformed.',
       });
     }
+
+    const token = authHeader.split(' ')[1];
+
 
     try {
       // Verify the token
